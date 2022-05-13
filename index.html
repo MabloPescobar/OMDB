@@ -12,19 +12,21 @@
 <body>
 	<div class = "wrapper">
         <!-- logo -->
+		<center>
         <div class = "logo">
             <div class = "container">
 				<!-- Sivun uudelleen latus takaisin oletus näkymään-->
                 <a href="index.html"><p>Elokuva<span>Haku</span></p></a>
             </div>
         </div>
+		</center>
 	<div class="container">
 		<div class = "search-container">
 			<!-- Hakukenttä -->
             <div class = "search-element">
-                <h3>Hae elokuvaa:</h3>
+                <h3>Etsi elokuva:</h3>
 				<!-- Määritetään mitä syöttökenttään laitetaan (tekstiä) Annetaan id jolla voidaan hakea elementtiä js tiedostossa sekä annetaan käsky aloittaa funktio näppäi tai hiirtä painamalla-->
-                <input type = "text" class = "form-control" placeholder="Hae elokuvan otsikolla..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
+                <input type = "text" class = "form-control" placeholder="Kirjoita etsittävä elokuva..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
 
                 <div class = "search-list" id = "search-list">
 				<!-- Lista alkaa tästä-->
@@ -52,9 +54,9 @@
 				<div class = "movie-info">
 					<h3 class = "movie-title">ELOKUVAN OTSIKKO</h3>
 					<ul class = "movie-misc-info">
-						<li class = "year">Vuosi:<i> year</i></li>
-						<li class = "rated">Ikäraja: <i>rating</i></li>
-						<li class = "released">Julkaisupäivämäärä: <i>released</i> </li>
+						<li class = "year">Vuosi:<i> vuosi</i></li>
+						<li class = "rated">Ikäraja: <i>ikäraja</i></li>
+						<li class = "released">Julkaisupäivämäärä: <i>julkaisupäivämäärä</i> </li>
 					</ul>
 					<p class = "genre"><b>Genre:</b> <i>genre</i></p>
 					<p class = "writer"><b>Käsikirjoittaja:</b> <i>käsikirjoittaja</i></p>
